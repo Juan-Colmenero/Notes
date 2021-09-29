@@ -63,11 +63,11 @@ public class PrinterAdapter extends PrintDocumentAdapter {
     public void drawRavisHeader(PdfDocument.Page page){
         PDFFrameGenerator pdfFrameGenerator = new PDFFrameGenerator(page, 32, 32, 14);
 
-        pdfFrameGenerator.drawCanvasText("ShopRavis", 0, 32);
-        pdfFrameGenerator.drawCanvasText("Ravis Import Warehouse", 0, 75);
-        pdfFrameGenerator.drawCanvasText("11029 Harry Hines Blvd", 0, 95);
+        pdfFrameGenerator.drawCanvasText("Company Name", 0, 32);
+        pdfFrameGenerator.drawCanvasText("Company Name 2", 0, 75);
+        pdfFrameGenerator.drawCanvasText("Street Address", 0, 95);
         pdfFrameGenerator.drawCanvasText("Dallas, TX", 0, 115);
-        pdfFrameGenerator.drawCanvasText("(214) 289 7060", 0, 135);
+        pdfFrameGenerator.drawCanvasText("Phone Number", 0, 135);
     }
 
     public void drawCustomerHeader(PdfDocument.Page page){
